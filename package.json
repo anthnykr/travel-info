@@ -1,0 +1,11 @@
+{
+  "name": "travel-country-info",
+  "version": "1.0.0",
+  "type": "module",
+  "bin": {
+    "travel-info": "./cli.js"
+  },
+  "scripts": {
+    "start": "node cli.js"
+  }
+}
