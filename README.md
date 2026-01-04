@@ -10,13 +10,15 @@ CLI tool that provides current travel information (apps, SIM/connectivity, visa 
 ## Installation
 
 ```bash
-# Clone and install globally
+npm install -g travel-info
+```
+
+Or clone and install locally:
+
+```bash
 git clone https://github.com/anthnykr/travel-info.git
 cd travel-info
 npm install -g .
-
-# Or run directly
-npx travel-info
 ```
 
 ## Usage
@@ -41,6 +43,10 @@ travel-info <citizenship> <departing-from> <destination>
 travel-info "United States" "United States" "Japan"
 ```
 
+### Options
+
+- `--verbose`, `-v`: Show the full prompt sent to Claude
+
 ## What it provides
 
 - **Apps** - Maps, transit, rideshare, payment, food delivery, messaging recommendations with pros/cons
@@ -48,9 +54,20 @@ travel-info "United States" "United States" "Japan"
 - **Visa/Entry** - Requirements based on your citizenship and departure country
 - **Pre-Travel** - Required online forms, health requirements
 
+## How it works
+
+Uses Claude CLI with only `WebSearch` and `WebFetch` tools enabled (all others blocked, including MCP servers).
+
 ## Disclaimer
 
-This tool uses AI to search for and compile travel information. Always verify with official government sources before traveling. The authors accept no liability for decisions based on this information.
+**For informational purposes only. Not legal or official travel advice.**
+
+This tool uses AI to search for and compile travel information. Information may be outdated or incorrect. Always verify with official government sources before traveling:
+- US: [travel.state.gov](https://travel.state.gov)
+- UK: [gov.uk/foreign-travel-advice](https://gov.uk/foreign-travel-advice)
+- EU: [europa.eu/youreurope/citizens/travel](https://europa.eu/youreurope/citizens/travel)
+
+The authors accept no liability for decisions based on this information.
 
 ## License
 
