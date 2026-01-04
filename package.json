@@ -1,11 +1,28 @@
 {
-  "name": "travel-country-info",
+  "name": "travel-info",
   "version": "1.0.0",
+  "description": "CLI tool providing current travel info (apps, SIM, visa, pre-travel forms) based on citizenship and destination",
   "type": "module",
   "bin": {
     "travel-info": "./cli.js"
   },
   "scripts": {
     "start": "node cli.js"
+  },
+  "keywords": [
+    "travel",
+    "visa",
+    "esim",
+    "cli",
+    "destination"
+  ],
+  "author": "anthnykr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthnykr/travel-info.git"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

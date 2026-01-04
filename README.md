@@ -1,4 +1,4 @@
-# travel-country-info
+# travel-info
 
 CLI tool that provides current travel information (apps, SIM/connectivity, visa requirements, pre-travel forms) for travelers based on citizenship, departure country, and destination.
 
@@ -11,8 +11,8 @@ CLI tool that provides current travel information (apps, SIM/connectivity, visa 
 
 ```bash
 # Clone and install globally
-git clone https://github.com/anthnykr/travel-country-info.git
-cd travel-country-info
+git clone https://github.com/anthnykr/travel-info.git
+cd travel-info
 npm install -g .
 
 # Or run directly
