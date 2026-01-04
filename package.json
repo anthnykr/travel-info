@@ -1,6 +1,6 @@
 {
   "name": "travel-info",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "CLI tool providing current travel info (apps, SIM, visa, pre-travel forms) based on citizenship and destination",
   "type": "module",
   "bin": {
